@@ -10,7 +10,7 @@ require('dotenv').config()
  const logger = require('./utils/logger')
  const proxy = require('express-http-proxy')
 const errorHandler = require('./middleware/errorHandler')
-const { validateToken } = require('../../identity-services/src/middleware/authMiddleware')
+const { validateToken } = require('../src/middleware/authMiddleware')
 
  app.use(helmet())
  app.use(cors())
